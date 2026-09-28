@@ -1,0 +1,21 @@
+name: gitpocket
+description: Mini IDE Git mobile - parcourir, editer et pousser des fichiers GitHub
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  flutter_secure_storage: ^9.2.2
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+  code_text_field: ^1.1.0
+  highlight: ^0.7.0
+  flutter_highlight: ^0.7.0
+
+flutter:
+  uses-material-design: true
