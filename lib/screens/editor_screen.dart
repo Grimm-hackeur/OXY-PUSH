@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:code_text_field/code_field.dart';
+import 'package:code_text_field/code_text_field.dart';
 import 'package:flutter_highlight/themes/atom-one-dark.dart';
 import 'package:highlight/languages/dart.dart' as lang_dart;
 import 'package:highlight/languages/javascript.dart' as lang_js;
