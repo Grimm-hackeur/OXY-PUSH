@@ -79,7 +79,6 @@ class _EditorScreenState extends State<EditorScreen> {
         _controller = CodeController(
           text: content,
           language: _languageFor(widget.path),
-          theme: atomOneDarkTheme,
         );
         _loading = false;
       });
@@ -212,12 +211,15 @@ class _EditorScreenState extends State<EditorScreen> {
               : Container(
                   color: const Color(0xFF15112A),
                   padding: const EdgeInsets.only(top: 8),
-                  child: CodeField(
-                    controller: _controller!,
-                    textStyle: const TextStyle(fontFamily: 'monospace', fontSize: 12.5),
-                    lineNumberStyle: const LineNumberStyle(
-                      width: 44,
-                      textStyle: TextStyle(color: muted, fontSize: 11),
+                  child: CodeTheme(
+                    data: const CodeThemeData(styles: atomOneDarkTheme),
+                    child: CodeField(
+                      controller: _controller!,
+                      textStyle: const TextStyle(fontFamily: 'monospace', fontSize: 12.5),
+                      lineNumberStyle: const LineNumberStyle(
+                        width: 44,
+                        textStyle: TextStyle(color: muted, fontSize: 11),
+                      ),
                     ),
                   ),
                 ),
